@@ -68062,7 +68062,7 @@ A.aaj.prototype={}
 A.xF.prototype={}
 A.HM.prototype={
 J(a,b){var s=null,r=A.anf(s,new A.qf(A.ahy(s,s,B.cO,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s)),B.cO,B.At,A.ahA(s,s,s,A.cS(s,s,B.dN,s,s,s,s,s,s,s,s,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),A.cS(s,s,B.dN,s,s,s,s,s,s,s,s,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s,s,A.cS(s,s,B.dN,s,s,s,s,s,s,s,s,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s,s,s,s,s,s,s,s))
-return new A.GM(new A.Hv(A.Zl($.cd(),A.a_A(),t.Fx),s),"Flutter Demo",r,!1,s)}}
+return new A.GM(new A.Hv(A.Zl($.cd(),A.a_A(),t.Fx),s),"Th\u1ecbnh Ph\xe1t Laundromat",r,!1,s)}}
 A.Eh.prototype={}
 A.Ei.prototype={
 J(a,b){var s=null,r=this.c,q=A.alD(r.d),p=t.b,o=A.lT(A.c([A.el("Design",s,s,s,A.cS(s,s,B.b8,s,s,s,s,s,"Raleway",s,s,12,s,B.aN,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.dv(s,s,20),A.el(r.a,s,s,s,A.aH(b).R8.Q,s,s)],p),B.ak,B.Y)
