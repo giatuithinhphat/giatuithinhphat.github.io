@@ -3,19 +3,22 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "version.json": "2eeffefa494a136b8995aa932092b83c",
-"index.html": "f5d17e850a7abc5359e0c2d41c9750e4",
-"/": "f5d17e850a7abc5359e0c2d41c9750e4",
-"main.dart.js": "7ef0a3c91d07b3d45d3532bf7a7b16ef",
-"flutter.js": "eb2682e33f25cd8f1fc59011497c35f8",
-"favicon.png": "c7b6ee4af149811b2bff560a25a937c8",
+  "version.json": "980547175e325fe622a3362b84d55b6a",
+"index.html": "6e3f3be637152474581494651bbf5f86",
+"/": "6e3f3be637152474581494651bbf5f86",
+"main.dart.js": "87d29db5f101b64f2cf2baf1a5ae19a7",
+"flutter.js": "f85e6fb278b0fd20c349186fb46ae36d",
+"favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
+"icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
+"icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
-"manifest.json": "a5cd325049eaa0efc364047eba6aa499",
-"assets/AssetManifest.json": "8033965deefe9787240e392f26c30b4c",
-"assets/NOTICES": "66035f26557a352d1c225c95cd09108e",
-"assets/FontManifest.json": "bf62cde7a3fa16514d18c3043623faf9",
+"manifest.json": "90c454c29b48f08bc06627d125f70466",
+"assets/AssetManifest.json": "42039729167d8db7a3c7db41ad833302",
+"assets/NOTICES": "8f4142d8152ff15465241c927cfa5be4",
+"assets/FontManifest.json": "dc3d03800ccca4601324923c0b1d6d57",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
+"assets/shaders/ink_sparkle.frag": "02b2715844968bdc3e9336e591752512",
 "assets/fonts/MaterialIcons-Regular.otf": "95db9098c58fd6db106f1116bae85a0b",
 "assets/assets/images/food/btCoHue02.jpg": "265db55e627024da914e2af23dc523ed",
 "assets/assets/images/food/btCoHue03.jpg": "1d5a6434c506db53ef8f88beb0ab0788",
@@ -29,23 +32,12 @@ const RESOURCES = {
 "assets/assets/images/drink/cfBiker01.jpg": "85450f581d19d8307d9d58297859db5f",
 "assets/assets/images/drink/cfOanhTrang01.jpg": "08023f5dd2cbfbb0d675f264b46b5ee2",
 "assets/assets/images/drink/cfOanhTrang02.jpg": "9c8989e95853c65fcff8890ad4a4af35",
-"assets/assets/icons/feather_twitter.svg": "3a254ce88e725b0169c202752364535e",
-"assets/assets/icons/feather_search.svg": "9d58d567fd606a3fdf19583f8685523d",
-"assets/assets/icons/feather_thumbs-up.svg": "a066c16fa33209a18b5282c40da1cf78",
-"assets/assets/icons/feather_message-square.svg": "5194a360f12626cb541cc80f58c4f217",
-"assets/assets/icons/behance-alt.svg": "5c5cb1c76f9e70c3906f061365fdac19",
-"assets/assets/icons/jlogo.svg": "4bd53c2f9ed21cac9539dc3c8503c47d",
-"assets/assets/icons/feather_dribbble.svg": "89b806ce6cc9dea635b81d7dc2406352",
-"assets/assets/icons/feather_share-2.svg": "2eadf3eff1fb945866235c94ec30915d",
-"assets/assets/icons/logo.svg": "398f5af99746d780c95f0ea9405f78b3",
-"assets/assets/fonts/Raleway/Raleway-Medium.ttf": "2ec8557460d3a2cd7340b16ac84fce32",
-"assets/assets/fonts/Raleway/Raleway-SemiBold.ttf": "8a192102b50118c45033e53ce897f103",
-"assets/assets/fonts/Raleway/Raleway-Regular.ttf": "75b4247fdd3b97d0e3b8e07b115673c2",
-"assets/assets/fonts/Raleway/Raleway-Bold.ttf": "7802d8b27fcb19893ce6b38c0789268e",
-"canvaskit/canvaskit.js": "c2b4e5f3d7a3d82aed024e7249a78487",
-"canvaskit/profiling/canvaskit.js": "ae2949af4efc61d28a4a80fffa1db900",
-"canvaskit/profiling/canvaskit.wasm": "95e736ab31147d1b2c7b25f11d4c32cd",
-"canvaskit/canvaskit.wasm": "4b83d89d9fecbea8ca46f2f760c5a9ba"
+"assets/assets/logo/jlogo.svg": "4bd53c2f9ed21cac9539dc3c8503c47d",
+"assets/assets/logo/logo.svg": "398f5af99746d780c95f0ea9405f78b3",
+"canvaskit/canvaskit.js": "2bc454a691c631b07a9307ac4ca47797",
+"canvaskit/profiling/canvaskit.js": "38164e5a72bdad0faa4ce740c9b8e564",
+"canvaskit/profiling/canvaskit.wasm": "95a45378b69e77af5ed2bc72b2209b94",
+"canvaskit/canvaskit.wasm": "bf50631470eb967688cca13ee181af62"
 };
 
 // The application shell files that are downloaded before a service worker can
@@ -53,7 +45,6 @@ const RESOURCES = {
 const CORE = [
   "main.dart.js",
 "index.html",
-"assets/NOTICES",
 "assets/AssetManifest.json",
 "assets/FontManifest.json"];
 // During install, the TEMP cache is populated with the application shell files.
@@ -152,9 +143,11 @@ self.addEventListener("fetch", (event) => {
     .then((cache) =>  {
       return cache.match(event.request).then((response) => {
         // Either respond with the cached resource, or perform a fetch and
-        // lazily populate the cache.
+        // lazily populate the cache only if the resource was successfully fetched.
         return response || fetch(event.request).then((response) => {
-          cache.put(event.request, response.clone());
+          if (response && Boolean(response.ok)) {
+            cache.put(event.request, response.clone());
+          }
           return response;
         });
       })
