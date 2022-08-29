@@ -4,9 +4,10 @@ const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
   "version.json": "980547175e325fe622a3362b84d55b6a",
-"index.html": "0ac1ca77527b3a4694d16a1415bf990a",
-"/": "0ac1ca77527b3a4694d16a1415bf990a",
-"main.dart.js": "f102dd7ea00d6bd94d63ea613e3ab314",
+"index.html": "dba15f87dfaece9161be59fdc97c1582",
+"/": "dba15f87dfaece9161be59fdc97c1582",
+"main.dart.js": "2db1fc065f74510af878b6e9aa00d9f3",
+"flutter.js": "f85e6fb278b0fd20c349186fb46ae36d",
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
@@ -74,7 +75,11 @@ const RESOURCES = {
 "assets/assets/images/drink/cfOanhTrang02.jpg": "9c8989e95853c65fcff8890ad4a4af35",
 "assets/assets/logo/jlogo.svg": "4bd53c2f9ed21cac9539dc3c8503c47d",
 "assets/assets/logo/logo.svg": "398f5af99746d780c95f0ea9405f78b3",
-"assets/assets/icons/hotel.png": "dfc411db78cdf77898977bc87c205025"
+"assets/assets/icons/hotel.png": "dfc411db78cdf77898977bc87c205025",
+"canvaskit/canvaskit.js": "2bc454a691c631b07a9307ac4ca47797",
+"canvaskit/profiling/canvaskit.js": "38164e5a72bdad0faa4ce740c9b8e564",
+"canvaskit/profiling/canvaskit.wasm": "95a45378b69e77af5ed2bc72b2209b94",
+"canvaskit/canvaskit.wasm": "bf50631470eb967688cca13ee181af62"
 };
 
 // The application shell files that are downloaded before a service worker can
