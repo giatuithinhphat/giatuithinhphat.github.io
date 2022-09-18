@@ -1,59 +1,371 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <!--
-    If you are serving your web app in a path other than the root, change the
-    href value below to reflect the base path you are serving from.
-
-    The path provided below has to start and end with a slash "/" in order for
-    it to work correctly.
-
-    For more details:
-    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
-
-    This is a placeholder for base href that will be replaced by the value of
-    the `--base-href` argument provided to `flutter build`.
-  -->
-  <base href="/">
-
-  <meta charset="UTF-8">
-  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="A new Flutter project.">
-
-  <!-- iOS meta tags & icons -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="website">
-  <link rel="apple-touch-icon" href="icons/Icon-192.png">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
-
-  <title>website</title>
-  <link rel="manifest" href="manifest.json">
-
-  <script>
-    // The value below is injected by flutter build, do not touch.
-    var serviceWorkerVersion = '2708024497';
-  </script>
-  <!-- This script adds the flutter initialization JS code -->
-  <script src="flutter.js" defer></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giặt Ủi Thịnh Phát</title>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="/source/main.css">
+    <link rel="stylesheet" href="/source/base.css">
+    <!-- Box Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="assets/fontawesome/css/all.css">
 </head>
+
 <body>
-  <script>
-    window.addEventListener('load', function(ev) {
-      // Download main.dart.js
-      
-      _flutter.loader.loadEntrypoint({
-        serviceWorker: {
-          serviceWorkerVersion: serviceWorkerVersion,
-        }
-      }).then(function(engineInitializer) {
-        return engineInitializer.initializeEngine();
-      }).then(function(appRunner) {
-        return appRunner.runApp();
-      });
-    });
-  </script>
+    <div class="homepage">
+        <!-- Header -->
+        <header class="header">
+            <div class="grid-full-width">
+                <nav class="navbar">
+                    <ul class="navbar-list">
+                        <li class="navbar-item">
+                            <a href="#" class="navbar-item-logo"> <img src="assets/logo/jlogo.svg" alt=""></a>
+                        </li>
+                        <div class="navbar-social">
+                            <ul class="navbar-social-list">
+                                <li class="navbar-social-item">17B Nguyễn Ngọc Sanh, K3, P6, Tp.Cà Mau</li>
+                                <li class="navbar-social-item">Tel: 0949.450.567</li>
+                                <a href="https://www.facebook.com/GiatUiThinhPhat17B" class="navbar-social-item-link"><i
+                                        class="fa-brands fa-facebook"></i>
+                                    <p>Pages Giặt Ủi Thịnh Phát</p>
+                                </a>
+                            </ul>
+                        </div>
+                    </ul>
+                    <ul class="navbar-list">
+                        <a href="#home" class="navbar-link">
+                            <li class="navbar-item"><i class="fa-solid fa-house"></i> Home</li>
+                        </a>
+                        <a href="#services" class="navbar-link">
+                            <li class="navbar-item">Dịch Vụ</li>
+                        </a>
+                        <a href="#contact" class="navbar-link">
+                            <li class="navbar-item">Liên Hệ</li>
+                        </a>
+                    </ul>
+                    <div class="localguide-container">
+                        <a href="#localguide">
+                            <p>Local Guide</p>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- Banner -->
+        <div class="banner">
+            <img src="assets/images/banner/banner.webp" alt="">
+        </div>
+        <!-- GioiThieuTiem -->
+        <section>
+            <div class="grid">
+                <div class="grid-row">
+                    <div class="gioithieutiem">
+                        <div class="gioithieutiem-left">
+                            <img src="assets/images/dichvu/dichvu_doc.jpeg" alt="">
+                        </div>
+                        <div class="gioithieutiem-right">
+                            <div class="title">
+                                <p id="title1">Giặt ủi </p>
+                                <p id="title2">Thịnh Phát</p>
+                            </div>
+                            <div class="subtitle">
+                                <p>Sơ lược về bổn tiệm</p>
+                            </div>
+                            <div class="description">
+                                <span>Với kinh nghiệm làm việc nhiều năm về ngành nghề giặt ủi cùng với các trang thiết
+                                    bị
+                                    máy móc hiện đại và đội ngũ nhân viên chuyên nghiệp. Dịch vụ <strong id="giatui">
+                                        Giặt ủi </strong><strong id="name">Thịnh Phát</strong> tự
+                                    hào là một trong những đối tác của các Cơ sở Spa, Nhà hàng và các Khách sạn lớn nhỏ
+                                    tại TP. Cà Mau.</span>
+                            </div>
+                            <div class="highlight">
+                                <ul class="column">
+                                    <li class="iconvatext">
+                                        <i class="fa-solid fa-piggy-bank"></i>
+                                        <p>Chi phí cạnh tranh</p>
+                                    </li>
+                                    <li class="iconvatext">
+                                        <i class="fa-solid fa-truck"></i>
+                                        <p>Giao - Nhận tận nơi</p>
+                                    </li>
+                                    <li class="iconvatext">
+                                        <i class="fa-solid fa-microchip"></i>
+                                        <p>Thiết bị hiện đại</p>
+                                    </li>
+                                    <li class="iconvatext">
+                                        <i class="fa-solid fa-thumbs-up"></i>
+                                        <p>Chất lượng - dịch vụ được đảm bảo</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="hotline">
+                                <p>Hotline: 0949.450.567 - (Hạnh)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- DacBiet -->
+        <section>
+            <div class="grid">
+                <div class="dacbiet">
+                    <div class="top">
+                        <div class="topleft">
+                            <li>Đặc Biệt</li>
+                        </div>
+                        <div class="topmid">
+                            <ul>
+                                <li>
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                    <p>Dịch vụ Giặt riêng/Lấy nhanh</p>
+                                </li>
+                                <li>
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                    <p>Giặt hấp Vest/ Áo cưới</p>
+                                </li>
+                                <li>
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                    <p>Dịch vụ Giặt tay</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="topright">
+                            <ul>
+                                <li>
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                    <p>Tẩy vết ố quần áo trắng</p>
+                                </li>
+                                <li>
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                    <p>Ủi li quần tây, áo sơ mi</p>
+                                </li>
+                                <li>
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                    <p>Vệ sinh giày - dép</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <ul>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <p>Sắp ra mắt dịch vụ vệ sinh đồ bảo hộ Motor</p>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- HinhAnhCuaTiem -->
+        <section>
+            <div class="grid">
+                <div class="grid-row">
+                    <div class="hinhanh-title">
+                        <div class="title">
+                            <p>Một vài hình ảnh của tiệm</p>
+                        </div>
+                        <div class="subtitle">
+                            <p>Hình ảnh thực tế tại tiệm</p>
+                        </div>
+                        <div class="mainrow">
+                            <div class="leftrow">
+                                <img src="/assets/images/hinhthucte/tiem_16_10.jpeg" alt="">
+                            </div>
+                            <div class="rightrow">
+                                <ul>
+                                    <img src="/assets/images/hinhthucte/Me.jpeg" alt="">
+                                    <img src="/assets/images/hinhthucte/MayGiat.jpeg" alt="">
+                                    <img src="/assets/images/hinhthucte/Z1000.jpeg" alt="">
+                                </ul>
+                                <ul>
+                                    <img src="/assets/images/hinhthucte/GiatGau.jpeg" alt="">
+                                    <img src="/assets/images/hinhthucte/Cha.jpeg" alt="">
+                                    <img src="/assets/images/hinhthucte/Heo.jpeg" alt="">
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <!-- PhanHoiTuKhachHang -->
+        <section>
+            <div class="grid">
+                <div class="phanhoitukhachhang">
+                    <div class="title">
+                        <p>Phản hồi từ khách hàng</p>
+                    </div>
+                    <div class="subtitle">
+                        <p>Nhận xét của các khách hàng đã dùng dịch vụ của tiệm</p>
+                    </div>
+                    <div class="row">
+                        <div class="khach">
+                            <div class="ava-name">
+                                <img src="/assets/images/khach/Gau.jpeg" alt="">
+                                <ul>
+                                    <div class="name">
+                                        <p>Gấu Nguyễn</p>
+                                    </div>
+                                    <div class="add">
+                                        <p>Phường 2, Tp.Cà Mau</p>
+                                    </div>
+                                </ul>
+                            </div>
+                            <div class="nhanxet">
+                                <p>Chủ tiệm tốt bụng, vui vẻ đồ sạch thơm xếp gọn ủng hộ chủ tiệm ạ</p>
+                            </div>
+                        </div>
+                        <div class="khach">
+                            <div class="ava-name">
+                                <img src="/assets/images/khach/Nam.jpeg" alt="">
+                                <ul>
+                                    <div class="name">
+                                        <p>Nam Huỳnh</p>
+                                    </div>
+                                    <div class="add">
+                                        <p>Giá Rai, Bạc Liêu</p>
+                                    </div>
+                                </ul>
+                            </div>
+                            <div class="nhanxet">
+                                <p>Dịch vụ chăm sóc rất tốt, sản phẩm hoàn thiện tốt. Sẽ ủng hộ thường xuyên</p>
+                            </div>
+                        </div>
+                        <div class="khach">
+                            <div class="ava-name">
+                                <img src="/assets/images/khach/Vinh.jpeg" alt="">
+                                <ul>
+                                    <div class="name">
+                                        <p>Vinh Nghiêm</p>
+                                    </div>
+                                    <div class="add">
+                                        <p>DNTN Hiệp Thành, P1, Tp.CM</p>
+                                    </div>
+                                </ul>
+                            </div>
+                            <div class="nhanxet">
+                                <p>Dịch vụ tốt, giá cả hợp lí chủ shop dễ thương, sẽ đến</p>
+                            </div>
+                        </div>
+                        <div class="khach">
+                            <div class="ava-name">
+                                <img src="/assets/images/khach/ChanMou.jpeg" alt="">
+                                <ul>
+                                    <div class="name">
+                                        <p>Chan Mou</p>
+                                    </div>
+                                    <div class="add">
+                                        <p>Trung Quốc</p>
+                                    </div>
+                                </ul>
+                            </div>
+                            <div class="nhanxet">
+                                <p>(Translated by Google) The price and the clerk are kind (Original) 価格も店員さんもやさしい</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="khach">
+                            <div class="ava-name">
+                                <img src="/assets/images/khach/Cuong.jpeg" alt="">
+                                <ul>
+                                    <div class="name">
+                                        <p>Alvin Lâm</p>
+                                    </div>
+                                    <div class="add">
+                                        <p>Quận 10, Tp.HCM</p>
+                                    </div>
+                                </ul>
+                            </div>
+                            <div class="nhanxet">
+                                <p>Giá ok, dịch vụ ngon, có về CM ghé shop nữa.</p>
+                            </div>
+                        </div>
+                        <div class="khach">
+                            <div class="ava-name">
+                                <img src="/assets/images/khach/Mich.jpeg" alt="">
+                                <ul>
+                                    <div class="name">
+                                        <p>Diệu Mích</p>
+                                    </div>
+                                    <div class="add">
+                                        <p>Bình Thủy, Cần Thơ</p>
+                                    </div>
+                                </ul>
+                            </div>
+                            <div class="nhanxet">
+                                <p>Rất chuyên nghiệm và thân thiện (Translated by Google) Very professional and friendly</p>
+                            </div>
+                        </div>
+                        <div class="khach">
+                            <div class="ava-name">
+                                <img src="/assets/images/khach/KhanhLinh.jpeg" alt="">
+                                <ul>
+                                    <div class="name">
+                                        <p>Linh Võ</p>
+                                    </div>
+                                    <div class="add">
+                                        <p>DNTN Hiệp Thành, P1, Tp.CM</p>
+                                    </div>
+                                </ul>
+                            </div>
+                            <div class="nhanxet">
+                                <p>Giặt giày ok như mới, like.</p>
+                            </div>
+                        </div>
+                        <div class="khach">
+                            <div class="ava-name">
+                                <img src="/assets/images/khach/Ngan.jpeg" alt="">
+                                <ul>
+                                    <div class="name">
+                                        <p>Grabriela B</p>
+                                    </div>
+                                    <div class="add">
+                                        <p>Long Sơn, BR-VT</p>
+                                    </div>
+                                </ul>
+                            </div>
+                            <div class="nhanxet">
+                                <p>Tiệm chất lượng tốt, giặt nhẹ nhàng không hư quần áo, giá lại phải chăng. Tới thử 1 lần là muốn ghé quài luôn.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="grid">
+                <div class="grid-row">
+                    <div class="columnleft">
+                        
+                    </div>
+                    <div class="columnmid"></div>
+                    <div class="columnright"></div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- Link to Javascript -->
+    <link rel="stylesheet" href="/souce/main.js">
 </body>
+
 </html>
