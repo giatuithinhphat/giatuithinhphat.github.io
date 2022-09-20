@@ -5,6 +5,8 @@
     --txt-color: #333;
     --white-color: #fff;
     --black-color: #000;
+    --grey-color :#F2F2F3;
+    --footer-color: rgb(41,45,38);
 }
 
 * {
@@ -31,7 +33,7 @@ img {
     max-width: 100%;
 }
 .grid{
-    width: 1600px;
+    width: 1200px;
     max-width: 100%;
     margin: 0 auto;
 }
@@ -44,3 +46,4 @@ img {
     display: flex;
     flex-wrap: wrap;
 }
+

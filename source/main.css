@@ -5,6 +5,7 @@
     background-color: black;
     position: fixed;
     width: 100%;
+    z-index: 9999;
 }
 
 .navbar {
@@ -109,17 +110,18 @@
 .gioithieutiem {
     width: 100%;
     display: flex;
+    margin-left: 12px;
+    margin-right: 12px;
 }
 
 .gioithieutiem-left {
     width: 45%;
-    margin-left: 12px;
     margin-right: 12px;
 }
 
 .gioithieutiem-right {
     width: 55%;
-    margin-right: 12px;
+    margin-left: 12px;
 }
 
 .gioithieutiem-left img {
@@ -141,6 +143,7 @@
     font-size: 5rem;
     font-weight: 600;
     color: var(--main-color);
+    margin-left: 1rem;
 }
 
 .gioithieutiem-right .subtitle {
@@ -197,6 +200,7 @@
     background-color: red;
     border-radius: 1.5rem;
     width: fit-content;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
 .gioithieutiem-right .hotline p {
@@ -211,9 +215,10 @@ section .dacbiet {
     background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/assets/images/dichvu/dichvu_ngang.jpeg");
     width: 100%;
     height: 300px;
+    margin-left: 12px;
+    margin-right: 12px;
     object-fit: cover;
-    
-
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
 /* top */
@@ -226,7 +231,7 @@ section .dacbiet {
 
 /* topleft */
 .dacbiet .top .topleft {
-    width: 33.333%;
+    width: 25%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -242,7 +247,7 @@ section .dacbiet {
 }
 /* topmid */
 .dacbiet .top .topmid {
-    /* width: 30%; */
+    width: 37.5%;
     display: flex;
     align-items: center;
     padding: 20px;
@@ -264,7 +269,7 @@ section .dacbiet {
 }
 /* topright */
 .dacbiet .top .topright {
-    /* width: 30%; */
+    width: 37.5%;
     display: flex;
     align-items: center;
     padding: 20px;
@@ -343,6 +348,7 @@ section .grid .grid-row .hinhanh-title .mainrow .leftrow {
 }
 section .grid .grid-row .hinhanh-title .mainrow .leftrow img {
     border-radius: 3rem;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 section .grid .grid-row .hinhanh-title .mainrow .rightrow {
     width: 48%;
@@ -354,13 +360,14 @@ section .grid .grid-row .hinhanh-title .mainrow .rightrow ul {
 }
 section .grid .grid-row .hinhanh-title .mainrow .rightrow img {
     max-width: 33%;
-
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
     border-radius: 1rem;
 }
 /* PhanHoiTuKhachHang */
 section .phanhoitukhachhang {
     margin-left: 12px;
     margin-right: 12px;
+    margin-bottom: 50px;
 }
 section .phanhoitukhachhang .title p {
     font-size: 5rem;
@@ -380,7 +387,7 @@ section .phanhoitukhachhang .row {
 }
 /* khach1 */
 section .phanhoitukhachhang .row .khach {
-   width: 20%;
+   width: 24%;
    padding: 1rem; 
 }
 section .phanhoitukhachhang .row .khach .ava-name {
@@ -394,7 +401,7 @@ section .phanhoitukhachhang .row .khach .ava-name img {
     margin-left: 2rem;
 }
 section .phanhoitukhachhang .row .khach .ava-name ul {
-    margin-left: 3rem;
+    margin-left: 2rem;
 }
 section .phanhoitukhachhang .row .khach .ava-name .name p {
     font-size: 2rem;
@@ -402,7 +409,8 @@ section .phanhoitukhachhang .row .khach .ava-name .name p {
     font-weight: 500;
 }
 section .phanhoitukhachhang .row .khach .ava-name .add p {
-    font-size: 1.5rem;
+    margin-top: 6px;
+    font-size: 1.2rem;
     color: coral;
     font-weight: 400;
 }
@@ -424,9 +432,159 @@ section .phanhoitukhachhang .row .khach .nhanxet p {
     color: var(--txt-color);
     font-style: italic;
 }
+/* QuyTrinh */
+
+section .quytrinh {
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-bottom: 2rem;
+}
+section .quytrinh #title {
+    font-size: 5rem;
+    color: var(--txt-color);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+section .quytrinh #subtitle {
+    font-size: 3rem;
+    color: var(--main-color);
+    font-weight: 600;
+}
+section .content {
+    margin-left: 12px;
+    margin-right: 12px;
+}
+section .content .card {
+    box-sizing: border-box;
+    border: 1px solid lightgrey;
+    /* display: flex; */
+    /* justify-content: center; */
+    padding: 1rem;
+    border-radius: 2rem;
+    background: var(--white-color);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+section .card .image {
+    width: 100%;
+    border-radius: 1.5rem;
+}
+section .card .image img {
+    width: 100%;
+    border-radius: 1.5rem;
+}
+section .card .number-title {
+    margin-top: 1rem;
+}
+section .card .number-title li {
+    display: flex;
+    align-items: center;
+    overflow-wrap: break-word;
+}
+section .card .number-title #number {
+    padding: 1.5rem;
+    background: var(--main-color);
+    border-radius: 50%;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-left: 1rem;
+}
+section .card .number-title #title {
+    padding: 0.5rem;
+    margin-left: 1rem;
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: justify;
+    color: var(--txt-color);
+}
+section .card .description {
+    margin-top: 1rem;
+}
+section .card .description li{
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: flex-start;
+}
+section .card .description i {
+    color: green;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    margin-right: 1rem;
+}
+section .card .description p {
+    font-size:1.6rem;
+    line-height: 2.5rem;
+    text-align: justify;
+    color: var(--txt-color);
+}
 /* Footer */
 .footer {
+    padding: 2rem;
+    background-color: rgb(45,41,38);
+}
+.footer .columnleft {
+    width: 20%;
+    align-items: center;
+    justify-content: center;
+}
+.footer .container {
     width: 100%;
-    padding: 3rem;
-    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+}
+/* mid */
+.footer .columnmid {
+    width: 40%;
+}
+.footer .columnmid #lienhe {
+    color: lightgray;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.footer .columnmid .info {
+    padding: 1rem;
+}
+.footer .columnmid li{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.footer .columnmid i {
+    color: rgba(211,211,211,0.7);
+    margin-right: 1rem;
+    font-size: 1.5rem;
+}
+.footer .columnmid p {
+    color: rgba(211,211,211,0.7);
+    font-size: 1.5rem;
+    font-style: italic;
+}
+.footer .columnmid p:hover {
+    color: var(--white-color);
+    font-style: normal;
+}
+/* right */
+.footer .columnright {
+    width: 40%;
+}
+.footer .columnright iframe {
+    max-width: 100%;
+}
+.footer .columnmid #lienhe {
+    color: lightgray;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.footer .columnmid .info {
+    padding: 1rem;
+}
+.footer .columnmid p {
+    color: rgba(211,211,211,0.7);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.footer .columnmid p:hover {
+    color: var(--white-color);
+    font-style: normal;
 }
