@@ -215,8 +215,8 @@ section .dacbiet {
     background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/assets/images/dichvu/dichvu_ngang.jpeg");
     width: 100%;
     height: 300px;
-    margin-left: 12px;
-    margin-right: 12px;
+    /* margin-left: 12px; */
+    /* margin-right: 12px; */
     object-fit: cover;
     box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
@@ -450,10 +450,6 @@ section .quytrinh #subtitle {
     color: var(--main-color);
     font-weight: 600;
 }
-section .content {
-    margin-left: 12px;
-    margin-right: 12px;
-}
 section .content .card {
     box-sizing: border-box;
     border: 1px solid lightgrey;
@@ -493,7 +489,6 @@ section .card .number-title #title {
     margin-left: 1rem;
     font-size: 2rem;
     font-weight: 500;
-    text-align: justify;
     color: var(--txt-color);
 }
 section .card .description {
@@ -517,74 +512,151 @@ section .card .description p {
     color: var(--txt-color);
 }
 /* Footer */
-.footer {
-    padding: 2rem;
-    background-color: rgb(45,41,38);
+section .footer {
+    width: 100%;
+    background: var(--txt-color);
+    
 }
-.footer .columnleft {
-    width: 20%;
-    align-items: center;
-    justify-content: center;
+section .footer .hangngang {
+    padding: 2% 5%;
+    display: flex;
+    justify-content: space-between;
 }
-.footer .container {
+section .footer .hangngang .cot-trai {
+    width: 33%;
+    padding: 1rem;
+}
+section .footer .hangngang .cot-trai .topleft {
+    margin-bottom: 5rem;
+    
+}
+section .footer .hangngang .cot-trai .topleft #lienhe {
+    color: var(--white-color);
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+section .footer .hangngang .cot-trai .topleft #gopy {
+    color: rgb(136,136,136);
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    text-align: justify;
+}
+section .footer .hangngang .cot-trai .midleft {
+    margin-top: 2rem;
+}
+section .footer .hangngang .cot-trai .column {
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
-/* mid */
-.footer .columnmid {
-    width: 40%;
+section .footer .hangngang .cot-trai .column .top {
+    margin-bottom: 2rem;
 }
-.footer .columnmid #lienhe {
-    color: lightgray;
-    font-size: 2.5rem;
-    font-weight: 600;
+
+section .footer .hangngang .cot-trai .midleft #title {
+    color: rgb(136,136,136);
+    font-size: 1.5rem;
     margin-bottom: 1rem;
 }
-.footer .columnmid .info {
-    padding: 1rem;
-}
-.footer .columnmid li{
-    display: flex;
-    align-items: center;
-    margin-bottom: 1rem;
-}
-.footer .columnmid i {
-    color: rgba(211,211,211,0.7);
-    margin-right: 1rem;
-    font-size: 1.5rem;
-}
-.footer .columnmid p {
-    color: rgba(211,211,211,0.7);
-    font-size: 1.5rem;
-    font-style: italic;
-}
-.footer .columnmid p:hover {
+section .footer .hangngang .cot-trai .midleft #description {
     color: var(--white-color);
-    font-style: normal;
-}
-/* right */
-.footer .columnright {
-    width: 40%;
-}
-.footer .columnright iframe {
-    max-width: 100%;
-}
-.footer .columnmid #lienhe {
-    color: lightgray;
-    font-size: 2.5rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-}
-.footer .columnmid .info {
-    padding: 1rem;
-}
-.footer .columnmid p {
-    color: rgba(211,211,211,0.7);
     font-size: 2rem;
+}
+section .footer .hangngang .cot-trai .bottomleft {
+    margin-top: 2rem;
+}
+section .footer .hangngang .cot-trai .bottomleft #title {
+    color: rgb(136,136,136);
+    font-size: 1.5rem;
     margin-bottom: 1rem;
 }
-.footer .columnmid p:hover {
+section .footer .hangngang .cot-trai .bottomleft #description {
     color: var(--white-color);
-    font-style: normal;
+    font-size: 2rem;
+    text-align: justify;
+}
+/* cot-giua */
+section .footer .hangngang .cot-giua {
+    width: 33%;
+}
+section .footer .hangngang .cot-giua #thongtin {
+    font-size: 3rem;
+    color: var(--white-color);
+    margin-bottom: 3rem;
+}
+section .footer .hangngang .cot-giua p {
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+    color:rgb(136,136,136);
+    font-size: 1.5rem;
+}
+section .footer .hangngang .cot-giua p:hover {
+    color: var(--white-color);
+}
+section .footer .hangngang .cot-giua .follow {
+    width: 100%;
+    margin-top: 2rem;
+}
+section .footer .hangngang .cot-giua .follow p {
+    font-size: 3rem;
+    color: var(--white-color);
+}
+section .footer .hangngang .cot-giua .follow iframe {
+    width: 100%;
+}
+/* cot-phai */
+section .footer .hangngang .cot-phai {
+    width: 33%;
+    padding: 1rem;
+}
+section .footer .hangngang .cot-phai .map p {
+    font-size: 3rem;
+    color: var(--white-color);
+    margin-bottom: 2rem;
+}
+section .footer .hangngang .cot-phai .map iframe {
+    width: 100%;
+}
+
+/* bottom-footer */
+section .footer .bottom-footer {
+    width: 100%;
+    background-color: black;
+    padding: 2%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+section .footer .bottom-footer li {
+    display: flex;
+}
+section .footer .bottom-footer p {
+    font-size: 1.5rem;
+    color: rgb(136,136,136);
+
+}
+section .footer .bottom-footer span {
+    font-size: 1.5rem;
+    color: var(--white-color);
+    margin-left: 0.5rem;
+    font-weight: 600;
+}
+section .footer .bottom-footer #myname{
+    color: var(--main-color);
+}
+section .footer .bottom-footer #space {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+section .footer .bottom-footer .pay {
+    display: flex;
+    gap: 20px; 
+}
+section .footer .bottom-footer .pay img {
+    width: 70px;
+  height: 40px;
+  object-fit: contain;
+  background-color: white;
+  padding: 10px 5px;
 }
