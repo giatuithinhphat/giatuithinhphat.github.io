@@ -513,150 +513,83 @@ section .card .description p {
 }
 /* Footer */
 section .footer {
-    width: 100%;
     background: var(--txt-color);
-    
+    width: 100%;
+    justify-content: space-between;
 }
-section .footer .hangngang {
-    padding: 2% 5%;
+section .footer *{
+    color: var(--white-color);
+    font-size: 1.5rem;
+}
+section .footer .footer-top {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2%;
+}
+section .footer .hinh {
+    width: 100%;
+}
+section .footer .footer-top .column1 {
+    padding: 1rem;
+}
+section .footer .footer-top .pages ul{
     display: flex;
     justify-content: space-between;
 }
-section .footer .hangngang .cot-trai {
-    width: 33%;
+section .footer .footer-top .pages p:hover {
+    color: var(--main-color);
+    cursor: pointer;
+}
+section .footer .footer-top .column2 {
     padding: 1rem;
 }
-section .footer .hangngang .cot-trai .topleft {
-    margin-bottom: 5rem;
-    
-}
-section .footer .hangngang .cot-trai .topleft #lienhe {
-    color: var(--white-color);
-    font-size: 3rem;
-    margin-bottom: 3rem;
-}
-section .footer .hangngang .cot-trai .topleft #gopy {
-    color: rgb(136,136,136);
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-    text-align: justify;
-}
-section .footer .hangngang .cot-trai .midleft {
-    margin-top: 2rem;
-}
-section .footer .hangngang .cot-trai .column {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-section .footer .hangngang .cot-trai .column .top {
-    margin-bottom: 2rem;
-}
-
-section .footer .hangngang .cot-trai .midleft #title {
-    color: rgb(136,136,136);
-    font-size: 1.5rem;
+section .footer .footer-top .column2 li {
     margin-bottom: 1rem;
 }
-section .footer .hangngang .cot-trai .midleft #description {
-    color: var(--white-color);
+section .footer .footer-top .column2 i {
     font-size: 2rem;
 }
-section .footer .hangngang .cot-trai .bottomleft {
-    margin-top: 2rem;
+section .footer .footer-top .column2 span {
+    margin-left: 1rem;
 }
-section .footer .hangngang .cot-trai .bottomleft #title {
-    color: rgb(136,136,136);
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-}
-section .footer .hangngang .cot-trai .bottomleft #description {
-    color: var(--white-color);
-    font-size: 2rem;
-    text-align: justify;
-}
-/* cot-giua */
-section .footer .hangngang .cot-giua {
-    width: 33%;
-}
-section .footer .hangngang .cot-giua #thongtin {
-    font-size: 3rem;
-    color: var(--white-color);
-    margin-bottom: 3rem;
-}
-section .footer .hangngang .cot-giua p {
-    margin-top: 0.5rem;
-    margin-bottom: 1.5rem;
-    color:rgb(136,136,136);
-    font-size: 1.5rem;
-}
-section .footer .hangngang .cot-giua p:hover {
-    color: var(--white-color);
-}
-section .footer .hangngang .cot-giua .follow {
-    width: 100%;
-    margin-top: 2rem;
-}
-section .footer .hangngang .cot-giua .follow p {
-    font-size: 3rem;
-    color: var(--white-color);
-}
-section .footer .hangngang .cot-giua .follow iframe {
-    width: 100%;
-}
-/* cot-phai */
-section .footer .hangngang .cot-phai {
-    width: 33%;
+section .footer .footer-top .column3 {
     padding: 1rem;
 }
-section .footer .hangngang .cot-phai .map p {
-    font-size: 3rem;
-    color: var(--white-color);
-    margin-bottom: 2rem;
-}
-section .footer .hangngang .cot-phai .map iframe {
-    width: 100%;
-}
-
-/* bottom-footer */
-section .footer .bottom-footer {
+/* footer-bot */
+section .footer .footer-bot {
     width: 100%;
     background-color: black;
-    padding: 2%;
+    padding: 1%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+}
+section .footer .footer-bot .left ul {
+    display: flex;
     align-items: center;
 }
-section .footer .bottom-footer li {
-    display: flex;
+section .footer .footer-bot .left #n1 {
+    margin-right: 0.5rem;
 }
-section .footer .bottom-footer p {
-    font-size: 1.5rem;
-    color: rgb(136,136,136);
-
-}
-section .footer .bottom-footer span {
-    font-size: 1.5rem;
+section .footer .footer-bot .left #n2 {
+    margin-right: 0.5rem;
     color: var(--white-color);
-    margin-left: 0.5rem;
-    font-weight: 600;
 }
-section .footer .bottom-footer #myname{
+section .footer .footer-bot .left #n3 {
+    color: var(--white-color);
+}
+section .footer .column2 .footer-fanpage {
+    text-decoration: none;
+}
+section .footer .column2 .footer-fanpage:hover {
+    font-size: 1.7rem;
     color: var(--main-color);
 }
-section .footer .bottom-footer #space {
-    margin-left: 1rem;
-    margin-right: 1rem;
+section .footer .column2 .footer-fanpage span {
+    text-decoration: none;
+    color: lightgray;
 }
-
-section .footer .bottom-footer .pay {
-    display: flex;
-    gap: 20px; 
-}
-section .footer .bottom-footer .pay img {
-    width: 70px;
-  height: 40px;
-  object-fit: contain;
-  background-color: white;
-  padding: 10px 5px;
+section .footer .column2 .footer-fanpage span:hover {
+    color: var(--main-color);
+    font-size: 1.7rem;
 }
