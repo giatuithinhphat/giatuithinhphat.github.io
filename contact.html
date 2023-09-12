@@ -85,7 +85,7 @@
         <nav class="nav nav-masthead justify-content-center">
           <a class="nav-link" href="index.html">Home</a>
           <a class="nav-link " href="service.html">Dịch Vụ</a>
-          
+
           <a class="nav-link" href="local.html">Địa Điểm Hay</a>
           <a class="nav-link active" style="color: brown;" href="contact.html">Liên Hệ</a>
         </nav>
@@ -94,7 +94,8 @@
 
     <div class="container">
       <h2 class="text-center txt-8" style="color: brown; padding: 0; margin-top: 4rem;">Giặt ủi Thịnh Phát</h2>
-      <p class="text-center txt-11" style="font-size: 1.5rem; padding: 0; margin-bottom: 4rem;">Giặt sạch - Sấy thơm - Xếp gọn</p>
+      <p class="text-center txt-11" style="font-size: 1.5rem; padding: 0; margin-bottom: 4rem;">Giặt sạch - Sấy thơm -
+        Xếp gọn</p>
     </div>
 
     <div class="container-fluid">
@@ -121,7 +122,7 @@
           <div class="col-12">
             <div>
               <div class="container">
-                <h2 class="text-center txt-6" style="color: brown;" >Giặt ủi Thịnh Phát</h2>
+                <h2 class="text-center txt-6" style="color: brown;">Giặt ủi Thịnh Phát</h2>
                 <div class="row">
                   <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 txt-7">
                     <i class="fas fa-map-marker-alt fa-4x ico-custom-1" style="color: brown;"></i>
@@ -157,19 +158,62 @@
       <div class="inner">
         <p class="text-center" style="color: black;">Copyright &#169; 2023 - Luke Bùi | All Rights Reserved</p>
     </footer>
-    </div>
+  </div>
 
 
 
 
 
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="js/jquery-3.5.1.slim.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/all.js"></script>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="js/jquery-3.5.1.slim.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/all.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script type="text/javascript">
+    jQuery(document).ready(function () {
+      jQuery('body').bind('cut copy paste', function (e) {
+        e.preventDefault();
+      });
+      jQuery("body").on("contextmenu", function (e) {
+        return false;
+      });
+    });
+    jQuery(document).keydown(function (event) {
+      if (event.keyCode == 123) {
+        return false;
+      }
+      if (event.ctrlKey && event.shiftKey && event.keyCode == 67) {
+        return false;
+      }
+      if (event.ctrlKey && event.shiftKey && event.keyCode == 73) {
+        return false;
+      }
+    });
+    document.onkeydown = function (e) {
+      if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 117)) {
+        return false;
+      } else {
+        return true;
+      }
+    };
+    jQuery(document).keypress("u", function (e) {
+      if (e.ctrlKey) {
+        return false;
+      } else {
+        return true;
+      }
+    });
+    document.body.addEventListener('keydown', event => {
+      if (event.ctrlKey && 'spa'.indexOf(event.key) !== -1) {
+        event.preventDefault()
+      }
+    })
+  </script>
 </body>
 
 
